@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); /* Here is the font link from GOOGLEFONTS*/ 
+
+*{
+    text-decoration: none; /*This removes the line below the link*/
+    background: lightgoldenrodyellow;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; /*This makes sure paddin and border are included */
+}
+
+header { /*Here i added the border and padding*/
+    border:  2px solid black;
+    padding: 15px;
+}
+
+nav { /*I made sure the menu float and added some settings*/
+    width: 25%;
+    float: left;
+    padding: 25px;
+    border: 2px solid black;
+}
+
+#form { /*Same thing as above*/
+    width: 75%;
+    float: left;
+    padding: 25px;
+    border: 2px solid black;
+}
+
+@media only screen and (min-width: 768px) { /*Here I set min width to 768 so it appears only on pc*/
+    header h2{
+        display: none; /*h2 doesn't appear when he screen is above 768px*/
+    }
+}
+
+@media only screen and (max-width: 768px) { /*Here I set the @media width for the phone and tablet*/
+    *{ /*Here the background for the whole page*/
+        background-color: lightgreen;
+    }
+    
+    header h3{ /*h3 doesn't appear on phone screen*/
+        display: none;
+    }
+
+}

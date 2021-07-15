@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); /* Here is the font link from GOOGLEFONTS*/ 
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; /*This makes sure paddin and border are included */
+}
+
+header { /*Here i added the border and padding*/
+    border:  2px solid red;
+    padding: 15px;
+}
+
+.menu { /*I made sure the menu float and added some settings*/
+    width: 25%;
+    float: left;
+    padding: 25px;
+    border: 2px solid red;
+}
+
+aside { /*Same thing as above*/
+    width: 75%;
+    float: left;
+    padding: 25px;
+    border: 2px solid red;
+}
+
+aside img { /*I set the image size here*/
+    width: 70%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) { /*I put the max width for the screen so it works for tablet and phone and chnaged some setings*/
+    *{
+        background-color: lightpink;
+        color: white;
+    }
+
+    header h2 {
+        display: none; /*didnt want it to be on the phone or tablet version*/
+    }
+}
